@@ -88,3 +88,11 @@ footer {
     bottom: 0;
     margin-top: 378px;
 }
+.sidebar-btn {
+    border-radius: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="1-seller.css">
 </head>
 <body>
-    <header>
+    <header>       
         <h2>Seller</h2>
+        <form action="/logout" method="POST" id="logoutForm">
+            <button type="submit" class="sidebar-btn">Logout</button>
+        </form>
     </header>
     <div class="container">
         <form id="addItemForm" class="form">
@@ -24,6 +27,10 @@
  
 
     <script>
+          document.getElementById('logoutForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'login.html';
+        });
         async function submitAddItem() {
             const itemData = {
                 name: document.getElementById('itemName').value,
